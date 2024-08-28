@@ -190,12 +190,17 @@ section.sobre .txt-sobre a{
 
 section.sobre .txt-sobre button{
     border: transparent;
+    background-color: transparent;
 }
 
 section.sobre .txt-sobre img{
     padding: 20px;
     background-color: black;
-    border-radius: 100%;
     background: black;
     cursor: pointer;
+    transition: .2s;
+}
+
+section.sobre .txt-sobre img:hover{
+    transform: scale(1.05);
 }
