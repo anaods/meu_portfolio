@@ -125,30 +125,48 @@ section.minhas-stacks{
     padding: 40px 4%;
 }
 
-section.minhas-stacks .flex{
-    gap: 60px;
-}
-
-.minhas-stacks .stacks-box{
-    color: white;
-    padding: 90px;
+section.minhas-stacks .icones{
     margin-top: 45px;
-    border-radius: 6%;
-    transition: .2s;
+    padding: 30px 40px;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
-.minhas-stacks .stacks-box:hover{
+@keyframes stacks-roll {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.minhas-stacks .icones-slide{
+    display: inline-flex;
+    animation: 12s stacks-roll linear infinite;
+}
+
+.minhas-stacks .stack-box{
+    padding: 20px 30px;
+}
+
+.icones:hover .icones-slide{
+    animation-play-state: paused;
+}
+
+.minhas-stacks .stack-box:hover{
     transform: scale(1.05);
-    box-shadow: 0 0 18px rgba(255, 255, 255, 0.466);
+    transition: .1s;
 }
 
-.minhas-stacks .stacks-box i{
+.minhas-stacks .stack-box i{
     font-size: 70px;
     color: purple;
 }
 
-.minhas-stacks .stacks-box h3{
-    font-size: 30px;
+.minhas-stacks .stack-box h3{
+    font-size: 25px;
+    color: white;
     margin: 15px 0;
 }
 
