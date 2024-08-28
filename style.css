@@ -151,3 +151,51 @@ section.minhas-stacks .flex{
     font-size: 30px;
     margin: 15px 0;
 }
+
+/* Estilo do Sobre Mim */
+
+section.sobre{
+    padding: 40px 4%;
+}
+
+section.sobre .flex{
+    /*align-items: center;*/
+    gap: 60px;
+}
+
+section.sobre .txt-sobre{
+    color: white;
+    margin-top: 100px
+}
+
+section.sobre .txt-sobre h2{
+    font-size: 50px;
+    line-height: 45px;
+    margin-bottom: 40px;
+}
+
+section.sobre .txt-sobre h2 span{
+    color: purple;
+    display: block;
+}
+
+section.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+section.sobre .txt-sobre a{
+    text-decoration: none;
+}
+
+section.sobre .txt-sobre button{
+    border: transparent;
+}
+
+section.sobre .txt-sobre img{
+    padding: 20px;
+    background-color: black;
+    border-radius: 100%;
+    background: black;
+    cursor: pointer;
+}
